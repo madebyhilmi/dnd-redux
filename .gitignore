@@ -2,3 +2,5 @@
 node_modules/
 .rpgstudio/
 *.log
+systems/**/systems.json
+systems/**/systems.rpg

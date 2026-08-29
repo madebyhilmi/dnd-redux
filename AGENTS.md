@@ -1,6 +1,6 @@
 # Wayhouse RPG Companion workflow
 
-This repository is both an Obsidian campaign vault and an RPG Companion App system repository. All app content targets the D&D 2024 rules and the `wayhouse-5e2024` system; do not create legacy 2014 (`5e`) resources.
+This is a standalone RPG Companion App system repository, separate from the Obsidian campaign vault. All app content targets the D&D 2024 rules and the `wayhouse-5e2024` system; do not create legacy 2014 (`5e`) resources.
 
 When creating or changing an item, monster, or encounter:
 
@@ -13,5 +13,6 @@ When creating or changing an item, monster, or encounter:
 7. Every stat is `{ "value": ... }`; `stats.id` is the one exception and is a plain string.
 8. Nested resources need their own `stats.id` and `stats.updated_at.value`.
 9. If removing nested array entries from an existing resource, add their IDs to the stat's `remove_ids` array so the app sync removes them.
+10. Keep `systems/_stdlib/` alongside the system. The upstream 2024 RPG Script files import these shared macros and the Dev Tool build will fail without them.
 
-The current system is based on the upstream 5e system. Do not copy copyrighted rulebook text into original campaign resources unless the user supplied or authored it.
+The current system is based on the upstream 5e2024 system. Do not copy copyrighted rulebook text into original campaign resources unless the user supplied or authored it.
