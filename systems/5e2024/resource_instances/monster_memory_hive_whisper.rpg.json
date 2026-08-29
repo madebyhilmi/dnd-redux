@@ -1,10 +1,10 @@
 {
-  "system": "wayhouse-5e2024",
+  "system": "5e2024",
   "resource_id": "monster",
   "stats": {
-    "id": "memory_hive_bulwark",
+    "id": "memory_hive_whisper",
     "name": {
-      "value": "Memory Hive Bulwark"
+      "value": "Memory Hive Whisper"
     },
     "source": {
       "value": "wayhouse_campaign"
@@ -13,7 +13,7 @@
       "value": "Memory Hive"
     },
     "armor_class": {
-      "value": 17
+      "value": 14
     },
     "hit_points": {
       "value": {
@@ -26,9 +26,9 @@
             "value": "d8"
           },
           "constant": {
-            "value": 32
+            "value": 8
           },
-          "id": "7941ae13-b976-4990-b831-54cb69b0d986",
+          "id": "f99346b5-b9ad-4d7e-836e-a405e6c9d9d9",
           "updated_at": {
             "value": "2026-08-29T19:20:11.062000"
           }
@@ -36,13 +36,13 @@
       }
     },
     "cr": {
-      "value": "cr_3"
+      "value": "cr_2"
     },
     "xp": {
-      "value": 700
+      "value": 450
     },
     "initiative": {
-      "value": 1
+      "value": 3
     },
     "speed": {
       "value": 30
@@ -60,43 +60,43 @@
       "value": 0
     },
     "strength_score": {
-      "value": 18
-    },
-    "dexterity_score": {
-      "value": 12
-    },
-    "constitution_score": {
-      "value": 18
-    },
-    "intelligence_score": {
-      "value": 10
-    },
-    "wisdom_score": {
-      "value": 13
-    },
-    "charisma_score": {
       "value": 8
     },
+    "dexterity_score": {
+      "value": 16
+    },
+    "constitution_score": {
+      "value": 12
+    },
+    "intelligence_score": {
+      "value": 14
+    },
+    "wisdom_score": {
+      "value": 16
+    },
+    "charisma_score": {
+      "value": 15
+    },
     "strength_saving_throw_modifier": {
-      "value": 6
+      "value": 0
     },
     "dexterity_saving_throw_modifier": {
       "value": 0
     },
     "constitution_saving_throw_modifier": {
-      "value": 6
+      "value": 0
     },
     "intelligence_saving_throw_modifier": {
-      "value": 0
+      "value": 4
     },
     "wisdom_saving_throw_modifier": {
-      "value": 0
+      "value": 5
     },
     "charisma_saving_throw_modifier": {
       "value": 0
     },
     "skills": {
-      "value": ""
+      "value": "insight +5, stealth +5"
     },
     "gear": {
       "value": ""
@@ -114,7 +114,7 @@
       "value": ""
     },
     "languages": {
-      "value": "Common, telepathy 30 ft."
+      "value": "Common, telepathy 60 ft."
     },
     "size": {
       "value": "medium"
@@ -123,10 +123,26 @@
       "value": "aberration"
     },
     "alignment": {
-      "value": "lawful_evil"
+      "value": "neutral_evil"
     },
     "traits": {
-      "value": []
+      "value": [
+        {
+          "resource_id": "monster_trait",
+          "stats": {
+            "trait_name": {
+              "value": "Integration Focus"
+            },
+            "trait_description": {
+              "value": "While the whisper has the Incapacitated condition, is more than 30 feet from Ebimacha, or is unable to communicate telepathically, it can't use Accelerate Integration."
+            },
+            "id": "20db5615-b0d3-4ae5-9231-076b7cbd6f7d",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.062000"
+            }
+          }
+        }
+      ]
     },
     "actions": {
       "value": [
@@ -137,7 +153,7 @@
               "value": "Multiattack"
             },
             "action_description": {
-              "value": "The bulwark makes two Integrated Fist attacks."
+              "value": "The whisper makes two Psychic Needle attacks."
             },
             "action_type": {
               "value": "none"
@@ -148,7 +164,7 @@
             "action_damage_variants": {
               "value": []
             },
-            "id": "5f9ee6ea-bf34-459d-b00a-a53ae9ddfa7f",
+            "id": "70a768ac-742f-42e8-812b-c9b5822209ec",
             "updated_at": {
               "value": "2026-08-29T19:20:11.062000"
             }
@@ -158,21 +174,21 @@
           "resource_id": "monster_action",
           "stats": {
             "action_name": {
-              "value": "Integrated Fist"
+              "value": "Psychic Needle"
             },
             "action_description": {
-              "value": "6 to hit, reach 5 ft. Hit:10 (1d12 + 4) Bludgeoning damage, and the bulwark can push the target 5 feet if it is Large or smaller."
+              "value": "5 to hit, range 60 ft. Hit:8 (1d10 + 3) Psychic damage, and the target can't take Reactions until the start of its next turn."
             },
             "action_type": {
-              "value": "melee"
+              "value": "ranged"
             },
             "action_attack_bonus": {
-              "value": 6
+              "value": 5
             },
             "action_damage_variants": {
               "value": []
             },
-            "id": "00365862-af5a-4a3b-9be7-ffb3bbaff89d",
+            "id": "8cf759f1-8397-4550-8087-fa143339e272",
             "updated_at": {
               "value": "2026-08-29T19:20:11.062000"
             }
@@ -182,10 +198,10 @@
           "resource_id": "monster_action",
           "stats": {
             "action_name": {
-              "value": "Many Bodies Remember"
+              "value": "Accelerate Integration"
             },
             "action_description": {
-              "value": "DC 14, each creature of the bulwark's choice in a 15-foot Cone [Area of Effect]. 13 (2d8 + 4) Bludgeoning damage, and the target is pushed 10 feet and has the Prone condition. Half damage only."
+              "value": "The whisper visibly turns its full attention toward Ebimacha. Unless the whisper takes damage, has the Incapacitated condition, is moved more than 30 feet from Ebimacha, or loses telepathic contact before Initiative count 20 of the next round, the integration clock advances one additional stage then. The consequence of this action is obvious when it begins."
             },
             "action_type": {
               "value": "none"
@@ -196,7 +212,7 @@
             "action_damage_variants": {
               "value": []
             },
-            "id": "247f30c7-4c75-46dd-9ed5-009243b9c90c",
+            "id": "ec4d85f4-29cb-414a-bac2-980f2afe5841",
             "updated_at": {
               "value": "2026-08-29T19:20:11.062000"
             }
@@ -205,18 +221,15 @@
       ]
     },
     "bonus_actions": {
-      "value": []
-    },
-    "reactions": {
       "value": [
         {
           "resource_id": "monster_action",
           "stats": {
             "action_name": {
-              "value": "Carry the Pain"
+              "value": "Intrusive Chorus"
             },
             "action_description": {
-              "value": "Another Memory Hive creature within 15 feet takes damage. The bulwark moves up to 10 feet without provoking Opportunity Attacks and takes half the triggering damage, reducing the triggering creature's damage by the same amount. This reaction can't transfer damage that would reduce the bulwark to 0 Hit Points."
+              "value": "DC 13, one creature the whisper can see within 60 feet. The target subtracts {@dice 1d4} from the next attack roll or saving throw it makes before the start of the whisper's next turn."
             },
             "action_type": {
               "value": "none"
@@ -227,13 +240,16 @@
             "action_damage_variants": {
               "value": []
             },
-            "id": "ea90cc2b-9923-4a24-9fb2-16412fe94425",
+            "id": "3f83e112-5a09-4bbc-a17b-b748979ccf8a",
             "updated_at": {
               "value": "2026-08-29T19:20:11.062000"
             }
           }
         }
       ]
+    },
+    "reactions": {
+      "value": []
     },
     "legendary_actions": {
       "value": []

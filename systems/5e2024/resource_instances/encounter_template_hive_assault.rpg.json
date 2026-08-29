@@ -1,5 +1,5 @@
 {
-  "system": "wayhouse-5e2024",
+  "system": "5e2024",
   "resource_id": "encounter_template",
   "stats": {
     "id": "hive_assault",
@@ -15,7 +15,7 @@
     "combatant_pool": {
       "value": [
         {
-          "system": "wayhouse-5e2024",
+          "system": "5e2024",
           "resource_id": "monster_combat_template_entry",
           "stats": {
             "min": {
@@ -332,7 +332,7 @@
           }
         },
         {
-          "system": "wayhouse-5e2024",
+          "system": "5e2024",
           "resource_id": "monster_combat_template_entry",
           "stats": {
             "min": {
@@ -608,7 +608,7 @@
           }
         },
         {
-          "system": "wayhouse-5e2024",
+          "system": "5e2024",
           "resource_id": "monster_combat_template_entry",
           "stats": {
             "min": {

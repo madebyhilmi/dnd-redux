@@ -1,11 +1,11 @@
 # Wayhouse RPG Companion workflow
 
-This is a standalone RPG Companion App system repository, separate from the Obsidian campaign vault. All app content targets the D&D 2024 rules and the `wayhouse-5e2024` system; do not create legacy 2014 (`5e`) resources.
+This is a standalone RPG Companion App resource-pack repository, separate from the Obsidian campaign vault. All app content targets and merges into the canonical D&D 2024 `5e2024` system; do not change the upstream system ID or version and do not create legacy 2014 (`5e`) resources.
 
 When creating or changing an item, monster, or encounter:
 
-1. Treat `systems/wayhouse-5e2024/system/resources/<resource_id>/stats.rpgs` as the schema.
-2. Store app content in `systems/wayhouse-5e2024/resource_instances/` as `.rpg.json`.
+1. Treat `systems/5e2024/system/resources/<resource_id>/stats.rpgs` as the schema.
+2. Store app content in `systems/5e2024/resource_instances/` as `.rpg.json`.
 3. Prefer the `wayhouse-rpg-companion` MCP tools. They create stable IDs, timestamps, nested resources, and safe filenames.
 4. Use the source ID `wayhouse_campaign` for original campaign content.
 5. Never silently overwrite an instance. Pass `overwrite: true` only when the requested change is intentional.

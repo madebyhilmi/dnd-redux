@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "mcp": "tsx resource-tools/src/server.ts",
-    "validate": "python3 resource-tools/validate_resource_instances.py --system wayhouse-5e2024",
-    "format": "python3 resource-tools/format_resource_instances.py --system wayhouse-5e2024",
+    "validate": "python3 resource-tools/validate_resource_instances.py --system 5e2024",
+    "format": "python3 resource-tools/format_resource_instances.py --system 5e2024",
     "import:5etools": "node resource-tools/import-5etools.mjs",
+    "release": "node resource-tools/prepare-release.mjs \"$HOME/Library/Application Support/com.blastervla.rpg-companion-dev-tool/dev_output\" .release",
     "check": "npm run validate"
   },
   "dependencies": {

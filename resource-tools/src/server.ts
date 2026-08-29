@@ -6,7 +6,7 @@ import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 
 const root = process.cwd();
-const instancesDir = path.join(root, 'systems', 'wayhouse-5e2024', 'resource_instances');
+const instancesDir = path.join(root, 'systems', '5e2024', 'resource_instances');
 const value = (v: unknown) => ({ value: v });
 const now = () => new Date().toISOString().replace('Z', '000');
 const slug = (text: string) => text.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
@@ -38,7 +38,7 @@ function buildServer() {
     inputSchema: z.object({ ...common, description: z.string().default(''), type: z.string().default('adventuring_gear'), rarity: z.string().default('common'), isMagic: z.boolean().default(false), requiresAttunement: z.boolean().default(false) })
   }, async (input) => {
     const id = input.id ?? slug(input.name);
-    const document = { system: 'wayhouse-5e2024', resource_id: 'item', stats: { id, name: value(input.name), source: value(input.source), description: value(input.description), type: value(input.type), rarity: value(input.rarity), is_magic: value(input.isMagic), requires_attunement: value(input.requiresAttunement), is_cursed: value(false), is_intelligent: value(false), is_spellcasting_focus: value(false), effects: value([]), quantity: value(1), updated_at: value(now()) } };
+    const document = { system: '5e2024', resource_id: 'item', stats: { id, name: value(input.name), source: value(input.source), description: value(input.description), type: value(input.type), rarity: value(input.rarity), is_magic: value(input.isMagic), requires_attunement: value(input.requiresAttunement), is_cursed: value(false), is_intelligent: value(false), is_spellcasting_focus: value(false), effects: value([]), quantity: value(1), updated_at: value(now()) } };
     const file = await save('item', id, document, input.overwrite);
     return { content: [{ type: 'text', text: `Created ${file}` }], structuredContent: { file, id } };
   });
@@ -49,7 +49,7 @@ function buildServer() {
   }, async (input) => {
     const id = input.id ?? slug(input.name); const a = input.abilities; const hp = { resource_id: 'dice_roll', stats: { dice_amount: value(input.hitDice.amount), dice_type: value(input.hitDice.die), constant: value(input.hitDice.modifier), ...nestedMeta() } };
     const stats: any = { id, name: value(input.name), source: value(input.source), tag: value(input.tag), armor_class: value(input.armorClass), hit_points: value(hp), cr: value(input.cr), xp: value(input.xp), initiative: value(input.initiative), speed: value(input.speed), burrow_speed: value(input.burrowSpeed), climb_speed: value(input.climbSpeed), fly_speed: value(input.flySpeed), swim_speed: value(input.swimSpeed), strength_score: value(a.str), dexterity_score: value(a.dex), constitution_score: value(a.con), intelligence_score: value(a.int), wisdom_score: value(a.wis), charisma_score: value(a.cha), strength_saving_throw_modifier: value(0), dexterity_saving_throw_modifier: value(0), constitution_saving_throw_modifier: value(0), intelligence_saving_throw_modifier: value(0), wisdom_saving_throw_modifier: value(0), charisma_saving_throw_modifier: value(0), skills: value(input.skills), gear: value(''), vulnerabilities: value(input.vulnerabilities), resistances: value(input.resistances), immunities: value(input.immunities), senses: value(input.senses), languages: value(input.languages), size: value(input.size), type: value(input.creatureType), alignment: value(input.alignment), traits: value(input.traits.map(makeTrait)), actions: value(input.actions.map(makeAction)), bonus_actions: value(input.bonusActions.map(makeAction)), reactions: value(input.reactions.map(makeAction)), legendary_actions: value(input.legendaryActions.map(makeAction)), spells: value([]), habitat: value([]), treasure: value([]), updated_at: value(now()) };
-    const file = await save('monster', id, { system: 'wayhouse-5e2024', resource_id: 'monster', stats }, input.overwrite);
+    const file = await save('monster', id, { system: '5e2024', resource_id: 'monster', stats }, input.overwrite);
     return { content: [{ type: 'text', text: `Created ${file}` }], structuredContent: { file, id } };
   });
 
@@ -61,10 +61,10 @@ function buildServer() {
     for (const entry of input.monsters) {
       const file = path.join(instancesDir, `monster_${slug(entry.id)}.rpg.json`);
       const monster = JSON.parse(await readFile(file, 'utf8'));
-      pool.push({ system: 'wayhouse-5e2024', resource_id: 'monster_combat_template_entry', stats: { min: value(entry.min), max: value(entry.max), weight: value(entry.weight), combatant: value({ resource_id: 'monster', stats: monster.stats }), ...nestedMeta() } });
+      pool.push({ system: '5e2024', resource_id: 'monster_combat_template_entry', stats: { min: value(entry.min), max: value(entry.max), weight: value(entry.weight), combatant: value({ resource_id: 'monster', stats: monster.stats }), ...nestedMeta() } });
     }
     const id = input.id ?? slug(input.name); const stats = { id, name: value(input.name), description: value(input.description), source: value(input.source), combatant_pool: value(pool), updated_at: value(now()) };
-    const file = await save('encounter_template', id, { system: 'wayhouse-5e2024', resource_id: 'encounter_template', stats }, input.overwrite);
+    const file = await save('encounter_template', id, { system: '5e2024', resource_id: 'encounter_template', stats }, input.overwrite);
     return { content: [{ type: 'text', text: `Created ${file}` }], structuredContent: { file, id } };
   });
 

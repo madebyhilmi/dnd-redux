@@ -1,8 +1,8 @@
 {
-  "id": "wayhouse-5e2024",
-  "name": "Wayhouse 5e 2024",
-  "abbreviation": "WH24",
-  "version": "0.1.0",
+  "id": "5e2024",
+  "name": "5.5e",
+  "abbreviation": "5.5e",
+  "version": "0.8.1",
   "min_app_version": "1.2.0",
   "character_indexed_stats": [
     "name",
