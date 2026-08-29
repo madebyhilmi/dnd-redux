@@ -1,0 +1,58 @@
+{
+  "resources": [
+    {
+      "id": "mochito_ruriki",
+      "name": "Mochito Ruriki",
+      "path": "resources/monster_mochito_ruriki_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.064000"
+    },
+    {
+      "id": "wayhouse_campaign",
+      "name": "source_wayhouse_campaign",
+      "path": "resources/source_source_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T00:00:00.000000"
+    },
+    {
+      "id": "memory_hive_whisper",
+      "name": "Memory Hive Whisper",
+      "path": "resources/monster_memory_hive_whisper_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.062000"
+    },
+    {
+      "id": "dumphey",
+      "name": "Dumphey",
+      "path": "resources/monster_dumphey_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.063000"
+    },
+    {
+      "id": "mucnir_dream_wolf",
+      "name": "Mucnir, Dream Wolf",
+      "path": "resources/monster_mucnir,_dream_wolf_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.060000"
+    },
+    {
+      "id": "hive_assault",
+      "name": "Hive Assault",
+      "path": "resources/encounter_template_hive_assault_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.064000"
+    },
+    {
+      "id": "memory_hive_bulwark",
+      "name": "Memory Hive Bulwark",
+      "path": "resources/monster_memory_hive_bulwark_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.062000"
+    },
+    {
+      "id": "ebimacha_dokichi",
+      "name": "Ebimacha Dokichi",
+      "path": "resources/monster_ebimacha_dokichi_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.064000"
+    },
+    {
+      "id": "memory_hound_manifestation",
+      "name": "Memory Hound Manifestation",
+      "path": "resources/monster_memory_hound_manifestation_wayhouse_campaign.rpg",
+      "updated_at": "2026-08-29T19:20:11.062000"
+    }
+  ]
+}
