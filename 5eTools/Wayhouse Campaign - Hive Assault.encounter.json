@@ -1,0 +1,34 @@
+{
+	"fileType": "encounter",
+	"items": [
+		{
+			"h": "mucnir%2c%20dream%20wolf_wayhousecampaign2024",
+			"c": 1
+		},
+		{
+			"h": "memory%20hive%20bulwark_wayhousecampaign2024",
+			"c": 1
+		},
+		{
+			"h": "memory%20hive%20whisper_wayhousecampaign2024",
+			"c": 1
+		}
+	],
+	"sources": [
+		"WayhouseCampaign2024"
+	],
+	"activeRulesId": "one",
+	"activePartyId": "custom",
+	"statePartyComps": {
+		"custom": {
+			"state": {
+				"playersSimple": [
+					{
+						"count": 3,
+						"level": 5
+					}
+				]
+			}
+		}
+	}
+}

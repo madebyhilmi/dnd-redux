@@ -1,0 +1,256 @@
+{
+  "system": "wayhouse-5e2024",
+  "resource_id": "monster",
+  "stats": {
+    "id": "memory_hive_bulwark",
+    "name": {
+      "value": "Memory Hive Bulwark"
+    },
+    "source": {
+      "value": "wayhouse_campaign"
+    },
+    "tag": {
+      "value": "Memory Hive"
+    },
+    "armor_class": {
+      "value": 17
+    },
+    "hit_points": {
+      "value": {
+        "resource_id": "dice_roll",
+        "stats": {
+          "dice_amount": {
+            "value": 8
+          },
+          "dice_type": {
+            "value": "d8"
+          },
+          "constant": {
+            "value": 32
+          },
+          "id": "7941ae13-b976-4990-b831-54cb69b0d986",
+          "updated_at": {
+            "value": "2026-08-29T19:20:11.062000"
+          }
+        }
+      }
+    },
+    "cr": {
+      "value": "cr_3"
+    },
+    "xp": {
+      "value": 700
+    },
+    "initiative": {
+      "value": 1
+    },
+    "speed": {
+      "value": 30
+    },
+    "burrow_speed": {
+      "value": 0
+    },
+    "climb_speed": {
+      "value": 0
+    },
+    "fly_speed": {
+      "value": 0
+    },
+    "swim_speed": {
+      "value": 0
+    },
+    "strength_score": {
+      "value": 18
+    },
+    "dexterity_score": {
+      "value": 12
+    },
+    "constitution_score": {
+      "value": 18
+    },
+    "intelligence_score": {
+      "value": 10
+    },
+    "wisdom_score": {
+      "value": 13
+    },
+    "charisma_score": {
+      "value": 8
+    },
+    "strength_saving_throw_modifier": {
+      "value": 6
+    },
+    "dexterity_saving_throw_modifier": {
+      "value": 0
+    },
+    "constitution_saving_throw_modifier": {
+      "value": 6
+    },
+    "intelligence_saving_throw_modifier": {
+      "value": 0
+    },
+    "wisdom_saving_throw_modifier": {
+      "value": 0
+    },
+    "charisma_saving_throw_modifier": {
+      "value": 0
+    },
+    "skills": {
+      "value": ""
+    },
+    "gear": {
+      "value": ""
+    },
+    "vulnerabilities": {
+      "value": ""
+    },
+    "resistances": {
+      "value": "psychic"
+    },
+    "immunities": {
+      "value": ""
+    },
+    "senses": {
+      "value": ""
+    },
+    "languages": {
+      "value": "Common, telepathy 30 ft."
+    },
+    "size": {
+      "value": "medium"
+    },
+    "type": {
+      "value": "aberration"
+    },
+    "alignment": {
+      "value": "lawful_evil"
+    },
+    "traits": {
+      "value": []
+    },
+    "actions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Multiattack"
+            },
+            "action_description": {
+              "value": "The bulwark makes two Integrated Fist attacks."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "5f9ee6ea-bf34-459d-b00a-a53ae9ddfa7f",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.062000"
+            }
+          }
+        },
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Integrated Fist"
+            },
+            "action_description": {
+              "value": "6 to hit, reach 5 ft. Hit:10 (1d12 + 4) Bludgeoning damage, and the bulwark can push the target 5 feet if it is Large or smaller."
+            },
+            "action_type": {
+              "value": "melee"
+            },
+            "action_attack_bonus": {
+              "value": 6
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "00365862-af5a-4a3b-9be7-ffb3bbaff89d",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.062000"
+            }
+          }
+        },
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Many Bodies Remember"
+            },
+            "action_description": {
+              "value": "DC 14, each creature of the bulwark's choice in a 15-foot Cone [Area of Effect]. 13 (2d8 + 4) Bludgeoning damage, and the target is pushed 10 feet and has the Prone condition. Half damage only."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "247f30c7-4c75-46dd-9ed5-009243b9c90c",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.062000"
+            }
+          }
+        }
+      ]
+    },
+    "bonus_actions": {
+      "value": []
+    },
+    "reactions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Carry the Pain"
+            },
+            "action_description": {
+              "value": "Another Memory Hive creature within 15 feet takes damage. The bulwark moves up to 10 feet without provoking Opportunity Attacks and takes half the triggering damage, reducing the triggering creature's damage by the same amount. This reaction can't transfer damage that would reduce the bulwark to 0 Hit Points."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "ea90cc2b-9923-4a24-9fb2-16412fe94425",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.062000"
+            }
+          }
+        }
+      ]
+    },
+    "legendary_actions": {
+      "value": []
+    },
+    "spells": {
+      "value": []
+    },
+    "habitat": {
+      "value": [
+        "urban"
+      ]
+    },
+    "treasure": {
+      "value": []
+    },
+    "updated_at": {
+      "value": "2026-08-29T19:20:11.062000"
+    }
+  }
+}

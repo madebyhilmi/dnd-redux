@@ -1,0 +1,297 @@
+{
+  "system": "wayhouse-5e2024",
+  "resource_id": "monster",
+  "stats": {
+    "id": "mucnir_dream_wolf",
+    "name": {
+      "value": "Mucnir, Dream Wolf"
+    },
+    "source": {
+      "value": "wayhouse_campaign"
+    },
+    "tag": {
+      "value": "half-illithid, psionic, Memory Hive"
+    },
+    "armor_class": {
+      "value": 16
+    },
+    "hit_points": {
+      "value": {
+        "resource_id": "dice_roll",
+        "stats": {
+          "dice_amount": {
+            "value": 11
+          },
+          "dice_type": {
+            "value": "d8"
+          },
+          "constant": {
+            "value": 33
+          },
+          "id": "4d2b5e28-abfd-4cfe-9037-ee4de08da91f",
+          "updated_at": {
+            "value": "2026-08-29T19:20:11.058000"
+          }
+        }
+      }
+    },
+    "cr": {
+      "value": "cr_5"
+    },
+    "xp": {
+      "value": 1800
+    },
+    "initiative": {
+      "value": 4
+    },
+    "speed": {
+      "value": 30
+    },
+    "burrow_speed": {
+      "value": 0
+    },
+    "climb_speed": {
+      "value": 0
+    },
+    "fly_speed": {
+      "value": 0
+    },
+    "swim_speed": {
+      "value": 0
+    },
+    "strength_score": {
+      "value": 10
+    },
+    "dexterity_score": {
+      "value": 18
+    },
+    "constitution_score": {
+      "value": 16
+    },
+    "intelligence_score": {
+      "value": 15
+    },
+    "wisdom_score": {
+      "value": 16
+    },
+    "charisma_score": {
+      "value": 18
+    },
+    "strength_saving_throw_modifier": {
+      "value": 0
+    },
+    "dexterity_saving_throw_modifier": {
+      "value": 7
+    },
+    "constitution_saving_throw_modifier": {
+      "value": 0
+    },
+    "intelligence_saving_throw_modifier": {
+      "value": 0
+    },
+    "wisdom_saving_throw_modifier": {
+      "value": 6
+    },
+    "charisma_saving_throw_modifier": {
+      "value": 7
+    },
+    "skills": {
+      "value": "deception +7, insight +6, perception +6"
+    },
+    "gear": {
+      "value": ""
+    },
+    "vulnerabilities": {
+      "value": ""
+    },
+    "resistances": {
+      "value": "psychic"
+    },
+    "immunities": {
+      "value": ""
+    },
+    "senses": {
+      "value": ""
+    },
+    "languages": {
+      "value": "Common plus two other languages, telepathy 60 ft."
+    },
+    "size": {
+      "value": "medium"
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "alignment": {
+      "value": "lawful_evil"
+    },
+    "traits": {
+      "value": [
+        {
+          "resource_id": "monster_trait",
+          "stats": {
+            "trait_name": {
+              "value": "Linked Mind"
+            },
+            "trait_description": {
+              "value": "While Dream Wolf is within 30 feet of a conscious Memory Hive ally, he has Advantage on saving throws against the Charmed and Frightened conditions. When no conscious Memory Hive ally is within 30 feet, his AC is 14 and he can't use Shared Reflex."
+            },
+            "id": "1ede6aca-f1a8-4661-9bc3-56f891fd536a",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.059000"
+            }
+          }
+        }
+      ]
+    },
+    "actions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Multiattack"
+            },
+            "action_description": {
+              "value": "Dream Wolf makes two Memory Blade attacks."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "aa425d7d-72be-43e7-888e-2d6123106fbc",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.059000"
+            }
+          }
+        },
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Memory Blade"
+            },
+            "action_description": {
+              "value": "7 to hit, reach 5 ft. or range 60 ft. Hit:13 (2d8 + 4) Psychic damage."
+            },
+            "action_type": {
+              "value": "melee_or_ranged"
+            },
+            "action_attack_bonus": {
+              "value": 7
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "a941cece-556d-4eed-a8d5-c91e0a2419d4",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.059000"
+            }
+          }
+        },
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Misremembered Position"
+            },
+            "action_description": {
+              "value": "DC 15, up to two creatures Dream Wolf can see within 60 feet. Dream Wolf moves the target up to 20 feet to an unoccupied space the target could normally reach, and the target has Disadvantage on its next attack roll before the end of its next turn. This movement doesn't provoke Opportunity Attacks. The target can move 5 feet in a direction of its choice instead."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "399292f7-8b8b-4676-8309-b1fde5cac41d",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.059000"
+            }
+          }
+        }
+      ]
+    },
+    "bonus_actions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Manifest Memory Hound"
+            },
+            "action_description": {
+              "value": "Dream Wolf creates one Memory Hound Manifestation in an unoccupied space he can see within 30 feet. No more than two hounds created by Dream Wolf can exist at once. A manifested hound disappears when Dream Wolf has the Incapacitated condition or dies."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "394103d7-8465-4df5-a5f2-fcefcc8d054c",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.060000"
+            }
+          }
+        }
+      ]
+    },
+    "reactions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Shared Reflex"
+            },
+            "action_description": {
+              "value": "Dream Wolf or a Memory Hive ally within 30 feet is hit by an attack, and Dream Wolf can perceive both creatures. Dream Wolf adds 2 to the target's AC against that attack, potentially causing it to miss."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "a6dc44d7-b450-41d6-a99b-74a39dad766d",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.060000"
+            }
+          }
+        }
+      ]
+    },
+    "legendary_actions": {
+      "value": []
+    },
+    "spells": {
+      "value": []
+    },
+    "habitat": {
+      "value": [
+        "urban"
+      ]
+    },
+    "treasure": {
+      "value": []
+    },
+    "updated_at": {
+      "value": "2026-08-29T19:20:11.060000"
+    }
+  }
+}

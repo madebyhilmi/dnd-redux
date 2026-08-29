@@ -1,0 +1,667 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "WayhouseCampaign2024",
+				"abbreviation": "WHC",
+				"full": "The Wayhouse Campaign",
+				"version": "1.0.0",
+				"authors": [
+					"Hilmi"
+				],
+				"convertedBy": [
+					"Codex"
+				],
+				"color": "5d5179",
+				"colorNight": "a899d0"
+			}
+		],
+		"edition": "one",
+		"status": "ready",
+		"dateAdded": 1787817600,
+		"dateLastModified": 1787817600
+	},
+	"monster": [
+		{
+			"name": "Mucnir, Dream Wolf",
+			"shortName": "Dream Wolf",
+			"source": "WayhouseCampaign2024",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-illithid",
+					"psionic",
+					"Memory Hive"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 16,
+			"int": 15,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+7",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"deception": "+7",
+				"insight": "+6",
+				"perception": "+6"
+			},
+			"resist": [
+				"psychic"
+			],
+			"passive": 16,
+			"languages": [
+				"Common plus two other languages",
+				"telepathy 60 ft."
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Linked Mind",
+					"entries": [
+						"While Dream Wolf is within 30 feet of a conscious Memory Hive ally, he has {@variantrule Advantage|XPHB} on saving throws against the {@condition Charmed|XPHB} and {@condition Frightened|XPHB} conditions. When no conscious Memory Hive ally is within 30 feet, his AC is 14 and he can't use Shared Reflex."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Dream Wolf makes two Memory Blade attacks."
+					]
+				},
+				{
+					"name": "Memory Blade",
+					"entries": [
+						"{@atkr m,r} {@hit 7} to hit, reach 5 ft. or range 60 ft. {@h}13 ({@damage 2d8 + 4}) Psychic damage."
+					]
+				},
+				{
+					"name": "Misremembered Position {@recharge 5}",
+					"entries": [
+						"{@actSave wis} {@dc 15}, up to two creatures Dream Wolf can see within 60 feet. {@actSaveFail} Dream Wolf moves the target up to 20 feet to an unoccupied space the target could normally reach, and the target has {@variantrule Disadvantage|XPHB} on its next attack roll before the end of its next turn. This movement doesn't provoke Opportunity Attacks. {@actSaveSuccess} The target can move 5 feet in a direction of its choice instead."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Manifest Memory Hound",
+					"entries": [
+						"Dream Wolf creates one {@creature Memory Hound Manifestation|WayhouseCampaign2024} in an unoccupied space he can see within 30 feet. No more than two hounds created by Dream Wolf can exist at once. A manifested hound disappears when Dream Wolf has the {@condition Incapacitated|XPHB} condition or dies."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Shared Reflex",
+					"entries": [
+						"{@actTrigger} Dream Wolf or a Memory Hive ally within 30 feet is hit by an attack, and Dream Wolf can perceive both creatures. {@actResponse} Dream Wolf adds 2 to the target's AC against that attack, potentially causing it to miss."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MA",
+				"RA"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"fluff": {
+				"entries": [
+					"Known to the guards as Mucnir and to his peers as Dream Wolf, this cold and clinical half-illithid leads the Memory Hive cell assaulting the Wayhouse. He has no regard for death, including his own; only the preservation and collection of memories matters. He arranged transport to Portsmouth by murdering the innocent seamstress Emily in public on Tongue Island. His escorts falsely remember locking him in the prison cabin; he actually spent the treacherous eight-hour crossing hidden in a concealed closet below deck built by Hive accomplices."
+				]
+			}
+		},
+		{
+			"name": "Memory Hive Bulwark",
+			"source": "WayhouseCampaign2024",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Memory Hive"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d8 + 32"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 10,
+			"wis": 13,
+			"cha": 8,
+			"save": {
+				"str": "+6",
+				"con": "+6"
+			},
+			"resist": [
+				"psychic"
+			],
+			"passive": 11,
+			"languages": [
+				"Common",
+				"telepathy 30 ft."
+			],
+			"cr": "3",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bulwark makes two Integrated Fist attacks."
+					]
+				},
+				{
+					"name": "Integrated Fist",
+					"entries": [
+						"{@atkr m} {@hit 6} to hit, reach 5 ft. {@h}10 ({@damage 1d12 + 4}) Bludgeoning damage, and the bulwark can push the target 5 feet if it is Large or smaller."
+					]
+				},
+				{
+					"name": "Many Bodies Remember {@recharge 5}",
+					"entries": [
+						"{@actSave str} {@dc 14}, each creature of the bulwark's choice in a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone}. {@actSaveFail} 13 ({@damage 2d8 + 4}) Bludgeoning damage, and the target is pushed 10 feet and has the {@condition Prone|XPHB} condition. {@actSaveSuccess} Half damage only."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Carry the Pain",
+					"entries": [
+						"{@actTrigger} Another Memory Hive creature within 15 feet takes damage. {@actResponse} The bulwark moves up to 10 feet without provoking Opportunity Attacks and takes half the triggering damage, reducing the triggering creature's damage by the same amount. This reaction can't transfer damage that would reduce the bulwark to 0 Hit Points."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"fluff": {
+				"entries": [
+					"A bulwark is a visibly integrated Hive member shaped to hold a choke point and carry the pain of nearby minds. Its movements echo with the posture and reflexes of several remembered bodies."
+				]
+			}
+		},
+		{
+			"name": "Memory Hive Whisper",
+			"source": "WayhouseCampaign2024",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "aberration",
+				"tags": [
+					"Memory Hive"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 16,
+			"cha": 15,
+			"save": {
+				"int": "+4",
+				"wis": "+5"
+			},
+			"skill": {
+				"insight": "+5",
+				"stealth": "+5"
+			},
+			"resist": [
+				"psychic"
+			],
+			"passive": 13,
+			"languages": [
+				"Common",
+				"telepathy 60 ft."
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Integration Focus",
+					"entries": [
+						"While the whisper has the {@condition Incapacitated|XPHB} condition, is more than 30 feet from Ebimacha, or is unable to communicate telepathically, it can't use Accelerate Integration."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The whisper makes two Psychic Needle attacks."
+					]
+				},
+				{
+					"name": "Psychic Needle",
+					"entries": [
+						"{@atkr r} {@hit 5} to hit, range 60 ft. {@h}8 ({@damage 1d10 + 3}) Psychic damage, and the target can't take Reactions until the start of its next turn."
+					]
+				},
+				{
+					"name": "Accelerate Integration",
+					"entries": [
+						"The whisper visibly turns its full attention toward Ebimacha. Unless the whisper takes damage, has the {@condition Incapacitated|XPHB} condition, is moved more than 30 feet from Ebimacha, or loses telepathic contact before Initiative count 20 of the next round, the integration clock advances one additional stage then. The consequence of this action is obvious when it begins."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Intrusive Chorus",
+					"entries": [
+						"{@actSave wis} {@dc 13}, one creature the whisper can see within 60 feet. {@actSaveFail} The target subtracts {@dice 1d4} from the next attack roll or saving throw it makes before the start of the whisper's next turn."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"TP"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"RA"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"A whisper is an altered psionic specialist that maintains the Hive's integration process and turns the collective's overlapping voices into a weapon."
+				]
+			}
+		},
+		{
+			"name": "Memory Hound Manifestation",
+			"source": "WayhouseCampaign2024",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d8 - 3"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 8,
+			"int": 3,
+			"wis": 14,
+			"cha": 6,
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"passive": 12,
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Unstable Manifestation",
+					"entries": [
+						"The hound disappears when it is reduced to 0 Hit Points, when its creator has the {@condition Incapacitated|XPHB} condition, or when its creator dies. The hound leaves no remains. A creature adjacent to the hound can use an action to attempt a {@dc 13} Intelligence (Investigation), Wisdom (Insight), or Charisma (Performance) check, describing how it confronts or transforms the memory visible inside the hound. On a success, the hound disappears."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fear Bite",
+					"entries": [
+						"{@atkr m} {@hit 5} to hit, reach 5 ft. {@h}7 ({@damage 2d6}) Psychic damage, and the target can't take Reactions until the start of its next turn. The hound then disappears."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"MA"
+			],
+			"fluff": {
+				"entries": [
+					"A memory hound resembles a translucent wolf until examined closely. Its body contains fragments of rooms, faces, waves, and voices drawn from remembered fear."
+				]
+			}
+		},
+		{
+			"name": "Dumphey",
+			"source": "WayhouseCampaign2024",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human",
+					"guard"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"chain shirt",
+						"shield"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atkr m,r} {@hit 4} to hit, reach 5 ft. or range 20/60 ft. {@h}5 ({@damage 1d6 + 2}) Piercing damage, or 6 ({@damage 1d8 + 2}) Piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"coastal",
+				"urban"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"fluff": {
+				"entries": [
+					"Dumphey is a quiet, fit young guard from Tongue Island who is eager to be recognized by his superiors. He sincerely remembers locking Mucnir in the prison cabin and checking him during the crossing, although those recollections were manufactured by the Memory Hive. He repeatedly touches a seam that Emily repaired on his uniform."
+				]
+			}
+		},
+		{
+			"name": "Mochito Ruriki",
+			"source": "WayhouseCampaign2024",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"guard"
+				]
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 15,
+			"int": 11,
+			"wis": 15,
+			"cha": 13,
+			"save": {
+				"str": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+5",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Mochito makes two Watch Spear attacks."
+					]
+				},
+				{
+					"name": "Watch Spear",
+					"entries": [
+						"{@atkr m,r} {@hit 5} to hit, reach 5 ft. or range 20/60 ft. {@h}8 ({@damage 1d10 + 3}) Piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Hold the Gate",
+					"entries": [
+						"{@actTrigger} A creature Mochito can see enters a space within 5 feet of her. {@actResponse} Mochito makes one Watch Spear attack against the triggering creature. On a hit, the creature's Speed becomes 0 for the rest of the turn."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"fluff": {
+				"entries": [
+					"Mochito Ruriki was an older, strong Wayhouse groundskeeper responsible for its gate, tower, grounds, and security. She and Ebimacha shared a longstanding professional relationship. Before the Hive killed her, she warned him by walkie-talkie and lit a flare visible from the road."
+				]
+			}
+		},
+		{
+			"name": "Ebimacha Dokichi",
+			"source": "WayhouseCampaign2024",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 11,
+			"int": 14,
+			"wis": 15,
+			"cha": 12,
+			"skill": {
+				"history": "+4",
+				"insight": "+4",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"Common plus one other language"
+			],
+			"cr": "0",
+			"action": [
+				{
+					"name": "Walking Stick",
+					"entries": [
+						"{@atkr m} {@hit 2} to hit, reach 5 ft. {@h}2 ({@damage 1d4}) Bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"Ebimacha Dokichi is an older, calm, and outwardly emotionless man who has maintained the ordinary Wayhouse for decades. The Memory Hive is coercing him into integration so it can search those memories for overlooked knowledge of the sealed section."
+				]
+			}
+		}
+	]
+}

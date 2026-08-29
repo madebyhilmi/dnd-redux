@@ -1,0 +1,4 @@
+import "../macros/system_common.rpgs";
+
+mechanic on_short_rest(event_names = "short_rest") =
+  dnd5eOnShortRest();

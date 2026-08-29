@@ -1,0 +1,4 @@
+import "../macros/system_common.rpgs";
+
+mechanic trigger_short_rest(event_names = "trigger_short_rest") =
+  dnd5eTriggerShortRestPopup();

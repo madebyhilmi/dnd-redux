@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "wayhouse-rpg-companion": {
+      "command": "npm",
+      "args": ["run", "--silent", "mcp"],
+      "cwd": "."
+    }
+  }
+}

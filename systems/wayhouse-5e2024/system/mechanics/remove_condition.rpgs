@@ -1,0 +1,4 @@
+import "../macros/system_common.rpgs";
+
+mechanic remove_condition(event_names = "remove_condition") =
+  dnd5eRemoveCondition(condition_meta_stat = $event.condition);

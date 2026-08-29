@@ -1,0 +1,9 @@
+import "../macros/system_common.rpgs";
+
+mechanic saving_throws_stabilize(event_names = "death_saves_stabilize") =
+  sequence(
+    effects = [
+      setStatValue(stat_id = "current_hp", value = 1),
+      showInfoMessage(message = "Stabilized with 1 HP"),
+    ],
+  );

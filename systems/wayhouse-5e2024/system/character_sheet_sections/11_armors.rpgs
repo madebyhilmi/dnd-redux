@@ -1,0 +1,4 @@
+import "../macros/system_common.rpgs";
+
+character_sheet_section armors() =
+  dnd5eArmorsSection();

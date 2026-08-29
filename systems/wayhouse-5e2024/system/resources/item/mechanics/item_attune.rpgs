@@ -1,0 +1,4 @@
+import "../../../macros/system_common.rpgs";
+
+mechanic item_attune(event_names = "toggle_attunement") =
+  toggleBoolSet(stat_id = "is_attuned", current_value = is_attuned);

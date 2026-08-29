@@ -1,0 +1,4 @@
+import "../macros/system_common.rpgs";
+
+mechanic level_up_set_proficiencies(event_names = "level_up_set_proficiencies") =
+  dnd5eLevelUpSetProficiencies();

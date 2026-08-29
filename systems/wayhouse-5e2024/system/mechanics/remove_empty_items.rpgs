@@ -1,0 +1,4 @@
+import "../macros/system_common.rpgs";
+
+mechanic remove_empty_items(event_names = "remove_empty_items") =
+  dnd5eRemoveEmptyItems();

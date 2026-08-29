@@ -1,0 +1,184 @@
+{
+  "system": "wayhouse-5e2024",
+  "resource_id": "monster",
+  "stats": {
+    "id": "dumphey",
+    "name": {
+      "value": "Dumphey"
+    },
+    "source": {
+      "value": "wayhouse_campaign"
+    },
+    "tag": {
+      "value": "human, guard"
+    },
+    "armor_class": {
+      "value": 16
+    },
+    "hit_points": {
+      "value": {
+        "resource_id": "dice_roll",
+        "stats": {
+          "dice_amount": {
+            "value": 2
+          },
+          "dice_type": {
+            "value": "d8"
+          },
+          "constant": {
+            "value": 2
+          },
+          "id": "3207edfc-5493-4f94-871d-968f43cc6acc",
+          "updated_at": {
+            "value": "2026-08-29T19:20:11.063000"
+          }
+        }
+      }
+    },
+    "cr": {
+      "value": "cr_1_4"
+    },
+    "xp": {
+      "value": 50
+    },
+    "initiative": {
+      "value": 1
+    },
+    "speed": {
+      "value": 30
+    },
+    "burrow_speed": {
+      "value": 0
+    },
+    "climb_speed": {
+      "value": 0
+    },
+    "fly_speed": {
+      "value": 0
+    },
+    "swim_speed": {
+      "value": 0
+    },
+    "strength_score": {
+      "value": 14
+    },
+    "dexterity_score": {
+      "value": 13
+    },
+    "constitution_score": {
+      "value": 12
+    },
+    "intelligence_score": {
+      "value": 10
+    },
+    "wisdom_score": {
+      "value": 12
+    },
+    "charisma_score": {
+      "value": 10
+    },
+    "strength_saving_throw_modifier": {
+      "value": 0
+    },
+    "dexterity_saving_throw_modifier": {
+      "value": 0
+    },
+    "constitution_saving_throw_modifier": {
+      "value": 0
+    },
+    "intelligence_saving_throw_modifier": {
+      "value": 0
+    },
+    "wisdom_saving_throw_modifier": {
+      "value": 0
+    },
+    "charisma_saving_throw_modifier": {
+      "value": 0
+    },
+    "skills": {
+      "value": "athletics +4, perception +3"
+    },
+    "gear": {
+      "value": ""
+    },
+    "vulnerabilities": {
+      "value": ""
+    },
+    "resistances": {
+      "value": ""
+    },
+    "immunities": {
+      "value": ""
+    },
+    "senses": {
+      "value": ""
+    },
+    "languages": {
+      "value": "Common"
+    },
+    "size": {
+      "value": "medium"
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "alignment": {
+      "value": "neutral_good"
+    },
+    "traits": {
+      "value": []
+    },
+    "actions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Spear"
+            },
+            "action_description": {
+              "value": "4 to hit, reach 5 ft. or range 20/60 ft. Hit:5 (1d6 + 2) Piercing damage, or 6 (1d8 + 2) Piercing damage if used with two hands to make a melee attack."
+            },
+            "action_type": {
+              "value": "melee_or_ranged"
+            },
+            "action_attack_bonus": {
+              "value": 4
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "5b8e5c38-a901-44df-bb5d-7e7a710c1cfa",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.063000"
+            }
+          }
+        }
+      ]
+    },
+    "bonus_actions": {
+      "value": []
+    },
+    "reactions": {
+      "value": []
+    },
+    "legendary_actions": {
+      "value": []
+    },
+    "spells": {
+      "value": []
+    },
+    "habitat": {
+      "value": [
+        "coastal",
+        "urban"
+      ]
+    },
+    "treasure": {
+      "value": []
+    },
+    "updated_at": {
+      "value": "2026-08-29T19:20:11.063000"
+    }
+  }
+}

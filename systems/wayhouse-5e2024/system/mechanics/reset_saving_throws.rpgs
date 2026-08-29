@@ -1,0 +1,15 @@
+import "../macros/system_common.rpgs";
+
+mechanic reset_saving_throws(event_names = "set_current_hp") =
+  when {
+    current_hp > 0 -> sequence(
+      effects = [
+        setStatFalse(stat_id = "death_saving_throws_success_1"),
+        setStatFalse(stat_id = "death_saving_throws_success_2"),
+        setStatFalse(stat_id = "death_saving_throws_success_3"),
+        setStatFalse(stat_id = "death_saving_throws_failure_1"),
+        setStatFalse(stat_id = "death_saving_throws_failure_2"),
+        setStatFalse(stat_id = "death_saving_throws_failure_3"),
+      ],
+    ),
+  };

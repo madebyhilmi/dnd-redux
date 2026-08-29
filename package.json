@@ -1,0 +1,18 @@
+{
+  "name": "wayhouse-rpg-companion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "mcp": "tsx resource-tools/src/server.ts",
+    "validate": "python3 resource-tools/validate_resource_instances.py --system wayhouse-5e2024",
+    "format": "python3 resource-tools/format_resource_instances.py --system wayhouse-5e2024",
+    "import:5etools": "node resource-tools/import-5etools.mjs",
+    "check": "npm run validate"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "tsx": "^4.20.0",
+    "zod": "^4.0.0"
+  }
+}

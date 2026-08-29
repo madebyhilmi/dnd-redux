@@ -1,0 +1,199 @@
+{
+  "system": "wayhouse-5e2024",
+  "resource_id": "monster",
+  "stats": {
+    "id": "memory_hound_manifestation",
+    "name": {
+      "value": "Memory Hound Manifestation"
+    },
+    "source": {
+      "value": "wayhouse_campaign"
+    },
+    "tag": {
+      "value": ""
+    },
+    "armor_class": {
+      "value": 13
+    },
+    "hit_points": {
+      "value": {
+        "resource_id": "dice_roll",
+        "stats": {
+          "dice_amount": {
+            "value": 3
+          },
+          "dice_type": {
+            "value": "d8"
+          },
+          "constant": {
+            "value": -3
+          },
+          "id": "0b00cf3c-43c3-45ef-a0b9-9657a961a077",
+          "updated_at": {
+            "value": "2026-08-29T19:20:11.062000"
+          }
+        }
+      }
+    },
+    "cr": {
+      "value": "cr_1_4"
+    },
+    "xp": {
+      "value": 50
+    },
+    "initiative": {
+      "value": 3
+    },
+    "speed": {
+      "value": 40
+    },
+    "burrow_speed": {
+      "value": 0
+    },
+    "climb_speed": {
+      "value": 0
+    },
+    "fly_speed": {
+      "value": 0
+    },
+    "swim_speed": {
+      "value": 0
+    },
+    "strength_score": {
+      "value": 10
+    },
+    "dexterity_score": {
+      "value": 16
+    },
+    "constitution_score": {
+      "value": 8
+    },
+    "intelligence_score": {
+      "value": 3
+    },
+    "wisdom_score": {
+      "value": 14
+    },
+    "charisma_score": {
+      "value": 6
+    },
+    "strength_saving_throw_modifier": {
+      "value": 0
+    },
+    "dexterity_saving_throw_modifier": {
+      "value": 0
+    },
+    "constitution_saving_throw_modifier": {
+      "value": 0
+    },
+    "intelligence_saving_throw_modifier": {
+      "value": 0
+    },
+    "wisdom_saving_throw_modifier": {
+      "value": 0
+    },
+    "charisma_saving_throw_modifier": {
+      "value": 0
+    },
+    "skills": {
+      "value": ""
+    },
+    "gear": {
+      "value": ""
+    },
+    "vulnerabilities": {
+      "value": ""
+    },
+    "resistances": {
+      "value": ""
+    },
+    "immunities": {
+      "value": "psychic"
+    },
+    "senses": {
+      "value": ""
+    },
+    "languages": {
+      "value": "understands the languages of its creator but can't speak"
+    },
+    "size": {
+      "value": "medium"
+    },
+    "type": {
+      "value": "aberration"
+    },
+    "alignment": {
+      "value": "unaligned"
+    },
+    "traits": {
+      "value": [
+        {
+          "resource_id": "monster_trait",
+          "stats": {
+            "trait_name": {
+              "value": "Unstable Manifestation"
+            },
+            "trait_description": {
+              "value": "The hound disappears when it is reduced to 0 Hit Points, when its creator has the Incapacitated condition, or when its creator dies. The hound leaves no remains. A creature adjacent to the hound can use an action to attempt a DC 13 Intelligence (Investigation), Wisdom (Insight), or Charisma (Performance) check, describing how it confronts or transforms the memory visible inside the hound. On a success, the hound disappears."
+            },
+            "id": "cef7a373-d0eb-4512-8d3c-512558420686",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.062000"
+            }
+          }
+        }
+      ]
+    },
+    "actions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Fear Bite"
+            },
+            "action_description": {
+              "value": "5 to hit, reach 5 ft. Hit:7 (2d6) Psychic damage, and the target can't take Reactions until the start of its next turn. The hound then disappears."
+            },
+            "action_type": {
+              "value": "melee"
+            },
+            "action_attack_bonus": {
+              "value": 5
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "cbc15c25-ceda-4c60-bea2-07cb2688be73",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.062000"
+            }
+          }
+        }
+      ]
+    },
+    "bonus_actions": {
+      "value": []
+    },
+    "reactions": {
+      "value": []
+    },
+    "legendary_actions": {
+      "value": []
+    },
+    "spells": {
+      "value": []
+    },
+    "habitat": {
+      "value": [
+        "urban"
+      ]
+    },
+    "treasure": {
+      "value": []
+    },
+    "updated_at": {
+      "value": "2026-08-29T19:20:11.062000"
+    }
+  }
+}

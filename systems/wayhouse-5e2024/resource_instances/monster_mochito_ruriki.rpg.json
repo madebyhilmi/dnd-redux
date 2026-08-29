@@ -1,0 +1,232 @@
+{
+  "system": "wayhouse-5e2024",
+  "resource_id": "monster",
+  "stats": {
+    "id": "mochito_ruriki",
+    "name": {
+      "value": "Mochito Ruriki"
+    },
+    "source": {
+      "value": "wayhouse_campaign"
+    },
+    "tag": {
+      "value": "guard"
+    },
+    "armor_class": {
+      "value": 17
+    },
+    "hit_points": {
+      "value": {
+        "resource_id": "dice_roll",
+        "stats": {
+          "dice_amount": {
+            "value": 9
+          },
+          "dice_type": {
+            "value": "d8"
+          },
+          "constant": {
+            "value": 18
+          },
+          "id": "8c3d2927-9e05-4e25-83d1-cacbc5996872",
+          "updated_at": {
+            "value": "2026-08-29T19:20:11.064000"
+          }
+        }
+      }
+    },
+    "cr": {
+      "value": "cr_2"
+    },
+    "xp": {
+      "value": 450
+    },
+    "initiative": {
+      "value": 1
+    },
+    "speed": {
+      "value": 30
+    },
+    "burrow_speed": {
+      "value": 0
+    },
+    "climb_speed": {
+      "value": 0
+    },
+    "fly_speed": {
+      "value": 0
+    },
+    "swim_speed": {
+      "value": 0
+    },
+    "strength_score": {
+      "value": 17
+    },
+    "dexterity_score": {
+      "value": 12
+    },
+    "constitution_score": {
+      "value": 15
+    },
+    "intelligence_score": {
+      "value": 11
+    },
+    "wisdom_score": {
+      "value": 15
+    },
+    "charisma_score": {
+      "value": 13
+    },
+    "strength_saving_throw_modifier": {
+      "value": 5
+    },
+    "dexterity_saving_throw_modifier": {
+      "value": 0
+    },
+    "constitution_saving_throw_modifier": {
+      "value": 0
+    },
+    "intelligence_saving_throw_modifier": {
+      "value": 0
+    },
+    "wisdom_saving_throw_modifier": {
+      "value": 4
+    },
+    "charisma_saving_throw_modifier": {
+      "value": 0
+    },
+    "skills": {
+      "value": "athletics +5, perception +4"
+    },
+    "gear": {
+      "value": ""
+    },
+    "vulnerabilities": {
+      "value": ""
+    },
+    "resistances": {
+      "value": ""
+    },
+    "immunities": {
+      "value": ""
+    },
+    "senses": {
+      "value": ""
+    },
+    "languages": {
+      "value": "Common"
+    },
+    "size": {
+      "value": "medium"
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "alignment": {
+      "value": "neutral_good"
+    },
+    "traits": {
+      "value": []
+    },
+    "actions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Multiattack"
+            },
+            "action_description": {
+              "value": "Mochito makes two Watch Spear attacks."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "50284388-256e-4f7b-9c8a-10da2b6b9bab",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.064000"
+            }
+          }
+        },
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Watch Spear"
+            },
+            "action_description": {
+              "value": "5 to hit, reach 5 ft. or range 20/60 ft. Hit:8 (1d10 + 3) Piercing damage."
+            },
+            "action_type": {
+              "value": "melee_or_ranged"
+            },
+            "action_attack_bonus": {
+              "value": 5
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "ab2e9334-9754-4d57-b4cb-fefaf0f8c1ff",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.064000"
+            }
+          }
+        }
+      ]
+    },
+    "bonus_actions": {
+      "value": []
+    },
+    "reactions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Hold the Gate"
+            },
+            "action_description": {
+              "value": "A creature Mochito can see enters a space within 5 feet of her. Mochito makes one Watch Spear attack against the triggering creature. On a hit, the creature's Speed becomes 0 for the rest of the turn."
+            },
+            "action_type": {
+              "value": "none"
+            },
+            "action_attack_bonus": {
+              "value": 0
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "e097977c-e6cc-42cc-ab8a-6b8d91a193d8",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.064000"
+            }
+          }
+        }
+      ]
+    },
+    "legendary_actions": {
+      "value": []
+    },
+    "spells": {
+      "value": []
+    },
+    "habitat": {
+      "value": [
+        "urban"
+      ]
+    },
+    "treasure": {
+      "value": []
+    },
+    "updated_at": {
+      "value": "2026-08-29T19:20:11.064000"
+    }
+  }
+}

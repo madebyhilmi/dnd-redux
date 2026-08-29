@@ -1,0 +1,183 @@
+{
+  "system": "wayhouse-5e2024",
+  "resource_id": "monster",
+  "stats": {
+    "id": "ebimacha_dokichi",
+    "name": {
+      "value": "Ebimacha Dokichi"
+    },
+    "source": {
+      "value": "wayhouse_campaign"
+    },
+    "tag": {
+      "value": ""
+    },
+    "armor_class": {
+      "value": 10
+    },
+    "hit_points": {
+      "value": {
+        "resource_id": "dice_roll",
+        "stats": {
+          "dice_amount": {
+            "value": 2
+          },
+          "dice_type": {
+            "value": "d8"
+          },
+          "constant": {
+            "value": 0
+          },
+          "id": "f74163d6-7852-44a1-9b45-b77bb4eab5e4",
+          "updated_at": {
+            "value": "2026-08-29T19:20:11.064000"
+          }
+        }
+      }
+    },
+    "cr": {
+      "value": "cr_0"
+    },
+    "xp": {
+      "value": 0
+    },
+    "initiative": {
+      "value": 0
+    },
+    "speed": {
+      "value": 30
+    },
+    "burrow_speed": {
+      "value": 0
+    },
+    "climb_speed": {
+      "value": 0
+    },
+    "fly_speed": {
+      "value": 0
+    },
+    "swim_speed": {
+      "value": 0
+    },
+    "strength_score": {
+      "value": 10
+    },
+    "dexterity_score": {
+      "value": 10
+    },
+    "constitution_score": {
+      "value": 11
+    },
+    "intelligence_score": {
+      "value": 14
+    },
+    "wisdom_score": {
+      "value": 15
+    },
+    "charisma_score": {
+      "value": 12
+    },
+    "strength_saving_throw_modifier": {
+      "value": 0
+    },
+    "dexterity_saving_throw_modifier": {
+      "value": 0
+    },
+    "constitution_saving_throw_modifier": {
+      "value": 0
+    },
+    "intelligence_saving_throw_modifier": {
+      "value": 0
+    },
+    "wisdom_saving_throw_modifier": {
+      "value": 0
+    },
+    "charisma_saving_throw_modifier": {
+      "value": 0
+    },
+    "skills": {
+      "value": "history +4, insight +4, perception +4"
+    },
+    "gear": {
+      "value": ""
+    },
+    "vulnerabilities": {
+      "value": ""
+    },
+    "resistances": {
+      "value": ""
+    },
+    "immunities": {
+      "value": ""
+    },
+    "senses": {
+      "value": ""
+    },
+    "languages": {
+      "value": "Common plus one other language"
+    },
+    "size": {
+      "value": "medium"
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "alignment": {
+      "value": "true_neutral"
+    },
+    "traits": {
+      "value": []
+    },
+    "actions": {
+      "value": [
+        {
+          "resource_id": "monster_action",
+          "stats": {
+            "action_name": {
+              "value": "Walking Stick"
+            },
+            "action_description": {
+              "value": "2 to hit, reach 5 ft. Hit:2 (1d4) Bludgeoning damage."
+            },
+            "action_type": {
+              "value": "melee"
+            },
+            "action_attack_bonus": {
+              "value": 2
+            },
+            "action_damage_variants": {
+              "value": []
+            },
+            "id": "b629a729-d49f-4f80-bac0-f9f36d7976e2",
+            "updated_at": {
+              "value": "2026-08-29T19:20:11.064000"
+            }
+          }
+        }
+      ]
+    },
+    "bonus_actions": {
+      "value": []
+    },
+    "reactions": {
+      "value": []
+    },
+    "legendary_actions": {
+      "value": []
+    },
+    "spells": {
+      "value": []
+    },
+    "habitat": {
+      "value": [
+        "urban"
+      ]
+    },
+    "treasure": {
+      "value": []
+    },
+    "updated_at": {
+      "value": "2026-08-29T19:20:11.064000"
+    }
+  }
+}
